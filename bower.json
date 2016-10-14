@@ -1,0 +1,13 @@
+ {
+    "name": "Sass-Boost",
+    "version": "1.0.0",
+    "description" :"A library of commonly used custom Sass functions.",
+    "keywords":[
+        "sass",
+        "scss",
+        "functions",
+        "library"
+    ],
+    "homepage": "https://github.com/esr360/Sass-Boost",
+    "dependencies":{}
+ }

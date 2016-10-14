@@ -1,0 +1,27 @@
+/// Get the value of a unique key from a nested map
+///
+/// @author [@esr360](http://twitter.com/esr360)
+/// @access public
+///
+/// @param {map} $map - the map which contains the target key
+/// @param {string} $target-key - the key of interest
+/// @param {string} $target-value - optional fallback value if key not found
+@function map-search($map, $target-key, $target-value: '') {
+    @each $key, $value in $map {
+        // Is this our key?
+        @if $key == $target-key {
+            $target-value: $value;
+        } @else {
+            @if type-of($value) == 'map' {
+                // Does the new map contain our key?
+                @if map-has-key($value, $target-key) {
+                    $target-value: map-get($value, $target-key);
+                } @else {
+                    // if not, recurse the function
+                    $target-value: map-search($value, $target-key, $target-value);
+                }
+            }
+        }
+    }
+    @return $target-value;
+}

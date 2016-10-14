@@ -1,0 +1,27 @@
+/// Replace a value in a list
+///
+/// @author Hugo Giraudel
+/// @access public
+/// @link https://goo.gl/NCFTHF
+///
+/// @param {map} $list - where custom config will be passed
+/// @param {*} $old-value - where custom config will be passed
+/// @param {*} $new-value - where custom config will be passed
+/// @param {bool} $recursive [false] - where custom config will be passed
+@function list-replace($list, $old-value, $new-value, $recursive: false) {
+    $result: ();
+
+    @for $i from 1 through length($list) {
+        @if type-of(nth($list, $i)) == list and $recursive {
+            $result: append($result, list-replace(nth($list, $i), $old-value, $new-value, $recursive));
+        } @else {
+            @if nth($list, $i) == $old-value {
+                $result: append($result, $new-value);
+            } @else {
+                $result: append($result, nth($list, $i));
+            }
+        }
+    }
+
+    @return $result;
+}

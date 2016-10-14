@@ -1,0 +1,15 @@
+/// Get a value from a nested map
+///
+/// @author Hugo Giraudel
+/// @access public
+/// @link https://www.sitepoint.com/extra-map-functions-sass/
+///
+/// @param {Map} $map - Map
+/// @param {Arglist} $keys - Key chain
+/// @return {*} - Desired value
+@function map-get-deep($map, $keys...) {
+    @each $key in $keys {
+        $map: map-get($map, $key);
+    }
+    @return $map;
+}

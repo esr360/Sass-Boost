@@ -1,0 +1,9 @@
+// Import testing framework
+@import '../node_modules/sass-true/sass/true';
+
+// Import the project
+@import '../src/sass-boost';
+
+// Import the test files
+@import 'functions/list-replace';
+@import 'functions/list-reverse';

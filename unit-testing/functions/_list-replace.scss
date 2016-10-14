@@ -1,0 +1,13 @@
+@include test-module('list-replace') {
+    @include test('Replace a value in a list') {
+
+        $list: (1, 2, 3, 4);
+
+        $actual: list-replace($list, 3, 'three');
+        $expected: (1 2 'three' 4);
+
+        @include assert-equal($actual, $expected, 
+            'should return new list with replaced value'
+        );
+    }
+}
