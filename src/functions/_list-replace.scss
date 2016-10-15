@@ -4,10 +4,10 @@
 /// @access public
 /// @link https://goo.gl/NCFTHF
 ///
-/// @param {map} $list - where custom config will be passed
-/// @param {*} $old-value - where custom config will be passed
-/// @param {*} $new-value - where custom config will be passed
-/// @param {bool} $recursive [false] - where custom config will be passed
+/// @param {map} $list - the list which contains the value you wish to replace
+/// @param {*} $old-value - the value you wish to replace
+/// @param {*} $new-value - what you wish to replace the old value with
+/// @param {bool} $recursive [false] - used if the target list is nested
 ///
 /// @return {list} - updated list
 @function list-replace($list, $old-value, $new-value, $recursive: false) {
