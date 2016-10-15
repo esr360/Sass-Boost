@@ -3,6 +3,22 @@
 
 # Sass-Boost
 
-> A library of commonly used custom Sass functions.
+> A library of commonly used custom Sass functions
 
-[View SassDoc Pages](https://esr360.github.io/Sass-Boost/)
+[View Documentation (via SassDoc)](https://esr360.github.io/Sass-Boost/)
+
+### Installation
+
+#### Via Bower
+
+```
+bower install Sass-Boost
+```
+
+#### As Git-Submodule
+
+> Ensure you change the PATH/TO/SUBMODULES part to your desired location
+
+```
+git submodule add https://github.com/esr360/Sass-Boost.git PATH/TO/SUBMODULES
+```

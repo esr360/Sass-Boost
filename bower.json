@@ -1,13 +1,25 @@
 {
-    "name": "Sass-Boost",
-    "version": "1.0.0",
-    "description" :"A library of commonly used custom Sass functions.",
-    "keywords":[
-        "sass",
-        "scss",
-        "functions",
-        "library"
-    ],
-    "homepage": "https://github.com/esr360/Sass-Boost",
-    "dependencies":{}
+  "name": "Sass-Boost",
+  "version": "1.0.0",
+  "description": "A library of commonly used custom Sass functions.",
+  "keywords": [
+    "sass",
+    "scss",
+    "functions",
+    "library"
+  ],
+  "homepage": "https://github.com/esr360/Sass-Boost",
+  "dependencies": {},
+  "authors": [
+    "Edmund Reed | @esr360"
+  ],
+  "main": "src/",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
 }
