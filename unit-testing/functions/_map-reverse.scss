@@ -1,0 +1,29 @@
+@include test-module('map-reverse') {
+    @include test('Reverse a map') {
+
+        $map:(
+            'foo':(
+                'bar':(
+                    'baz': 1,
+                    'qux': 'alpha'
+                )
+            ),
+            'color': red
+        );
+
+        $actual: map-reverse($map);
+        $expected:(
+            'color': red,
+            'foo':(
+                'bar':(
+                    'qux': 'alpha',
+                    'baz': 1
+                )
+            )
+        );
+
+        @include assert-equal(
+            $actual, $expected, 'should return $map in reverse'
+        );
+    }
+}

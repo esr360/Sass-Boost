@@ -1,0 +1,19 @@
+@include test-module('map-set') {
+    @include test('Set a key in an existing map') {
+
+        $map:(
+            'foo': 'alpha',
+            'bar': 'beta'
+        );
+
+        $actual: map-set($map, 'foo', 1);
+        $expected:(
+            'foo': 1,
+            'bar': 'beta'
+        );
+
+        @include assert-equal(
+            $actual, $expected, 'should return updated map with new value'
+        );
+    }
+}

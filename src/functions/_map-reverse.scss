@@ -5,9 +5,9 @@
 /// @link http://git.io/vLfuz
 ///
 /// @param $map {map} - the map to be reversed
-@function reverse-map($map) {	
+@function map-reverse($map) {
     $keys: map-keys($map);
-    $map-reversed: ();  
+    $map-reversed: ();
 
     @for $i from length($keys) through 1 {
         $map-reversed: map-merge(
@@ -15,7 +15,7 @@
         );
     }
 
-    $result: $map-reversed; 
-    
+    $result: $map-reversed;
+
     @return $result;
 }

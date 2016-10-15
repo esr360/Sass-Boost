@@ -6,8 +6,8 @@
         $actual: list-replace($list, 3, 'three');
         $expected: (1 2 'three' 4);
 
-        @include assert-equal($actual, $expected, 
-            'should return new list with replaced value'
+        @include assert-equal(
+            $actual, $expected, 'should return new list with replaced value'
         );
     }
 }

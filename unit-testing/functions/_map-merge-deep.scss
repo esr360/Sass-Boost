@@ -1,0 +1,39 @@
+@include test-module('map-merge-deep') {
+    @include test('Recursively merge (deep merge) two maps') {
+        $map1:(
+            'foo':(
+                'bar':(
+                    'baz': 1,
+                    'qux': 'alpha'
+                )
+            ),
+            'color': red
+        );
+
+        $map2:(
+            'foo':(
+                'bar':(
+                    'baz': 1,
+                    'qux': 'beta'
+                )
+            ),
+            'size': 'large'
+        );
+
+        $actual: map-merge-deep($map1, $map2);
+        $expected:(
+            'foo':(
+                'bar':(
+                    'baz': 1,
+                    'qux': 'beta'
+                )
+            ),
+            'size': 'large',
+            'color': red
+        );
+
+        @include assert-equal(
+            $actual, $expected, 'should return new map merged values'
+        );
+    }
+}

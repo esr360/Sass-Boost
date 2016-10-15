@@ -1,0 +1,25 @@
+@include test-module('map-set-deep') {
+    @include test('Set a key in an existing map') {
+
+        $map:(
+            'foo':(
+                'bar':(
+                    'baz': 1
+                )
+            )
+        );
+
+        $actual: map-set-deep($map, ('foo', 'bar', 'baz'), 2);
+        $expected:(
+            'foo':(
+                'bar':(
+                    'baz': 2
+                )
+            )
+        );
+
+        @include assert-equal(
+            $actual, $expected, 'should return updated map with new value'
+        );
+    }
+}

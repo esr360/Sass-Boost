@@ -1,0 +1,13 @@
+@include test-module('string-replace') {
+    @include test('Replace a word in a string') {
+
+        $string: 'Lorem ipsum dolor sit amet';
+
+        $actual: string-replace($string, 'ipsum', 'salmon');
+        $expected: 'Lorem salmon dolor sit amet';
+
+        @include assert-equal(
+            $actual, $expected, 'should return new string with replaced value'
+        );
+    }
+}

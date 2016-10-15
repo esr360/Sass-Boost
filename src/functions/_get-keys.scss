@@ -12,6 +12,6 @@
     @for $i from 1 to $counter {
         $return: append($return, nth($keys, $i));
     }
- 
+
     @return $return;
 }

@@ -5,10 +5,6 @@
  ******************************************************************/
 
 module.exports = function(grunt) {
-    
-    /**************************************************************
-     * Packages
-     *************************************************************/
         
     grunt.initConfig({
 		
@@ -19,7 +15,10 @@ module.exports = function(grunt) {
          * @see https://github.com/ahmednuaman/grunt-scss-lint
          */
         scsslint: {
-            allFiles: ['src/**/*.scss'],
+            allFiles: [
+                'src/**/*.scss',
+                'unit-testing/functions/**/*.scss'
+            ],
             options: {
                 config: '.scss-lint.yml',
                 colorizeOutput: false
@@ -43,7 +42,7 @@ module.exports = function(grunt) {
             default: {
                 src: ['src/functions/**/*.scss'],
                 options: {
-                    dest: 'docs/sass'
+                    dest: 'docs'
                 }
             },
         },

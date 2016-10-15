@@ -6,8 +6,8 @@
         $actual: list-reverse($list);
         $expected: (4 3 2 1);
 
-        @include assert-equal($actual, $expected, 
-            'should return the list in reverse'
+        @include assert-equal(
+            $actual, $expected, 'should return the list in reverse'
         );
     }
 }

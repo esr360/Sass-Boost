@@ -20,7 +20,7 @@
     }
 
     $merge: (nth($keys, $length): $value);
-        
+
     @if $map-level {
         $merge: map-merge($map-level, $merge);
     }
@@ -33,12 +33,10 @@
             $map-level: map-get-deep($map, $get-keys);
             @if $map-level {
                 $merge: map-merge($map-level, ($key: $merge));
-            }
-            @else {
+            } @else {
                 $merge: ($key: $merge);
             }
-        }
-        @else {
+        } @else {
             $merge: ($key: $merge);
         }
     }
