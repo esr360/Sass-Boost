@@ -9,6 +9,10 @@
 
 [View Documentation (via SassDoc)](https://esr360.github.io/Sass-Boost/)
 
+### Requirements
+
+* Sass 3.4+
+
 ### Installation
 
 #### Via Bower
@@ -51,3 +55,25 @@ You now have access to the following functions:
 * [`map-set()`](https://esr360.github.io/Sass-Boost/#undefined-function-map-set)
 * [`map-set-deep()`](https://esr360.github.io/Sass-Boost/#undefined-function-map-set-deep)
 * [`string-replace()`](https://esr360.github.io/Sass-Boost/#undefined-function-str-replace)
+
+### Linting/Unit Testing
+
+> The Sass unit test framework is [Sass True](https://github.com/oddbird/true)
+
+#### Requirements
+
+* Node.js (+ npm)
+* Grunt
+* Scss Lint
+
+Install Node modules:
+
+```
+npm install
+```
+
+To run unit tests, generate documentation and lint the source files, run the following command:
+
+```
+grunt compile
+```
