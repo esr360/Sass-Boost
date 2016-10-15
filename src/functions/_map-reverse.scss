@@ -5,6 +5,8 @@
 /// @link http://git.io/vLfuz
 ///
 /// @param $map {map} - the map to be reversed
+///
+/// @return {map} - reversed map
 @function map-reverse($map) {
     $keys: map-keys($map);
     $map-reversed: ();

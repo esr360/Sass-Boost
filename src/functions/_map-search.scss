@@ -5,7 +5,9 @@
 ///
 /// @param {map} $map - the map which contains the target key
 /// @param {string} $target-key - the key of interest
-/// @param {string} $target-value - optional fallback value if key not found
+/// @param {*} $target-value - optional fallback value if key not found
+///
+/// @return {*} - desired value
 @function map-search($map, $target-key, $target-value: '') {
     @each $key, $value in $map {
         // Is this our key?

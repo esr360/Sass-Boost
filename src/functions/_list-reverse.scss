@@ -4,8 +4,10 @@
 /// @access public
 /// @link http://hugogiraudel.com/2013/08/08/advanced-sass-list-functions/
 ///
-/// @param $list
-/// @param $recursive
+/// @param {list }$list - the list which you wish to reverse
+/// @param {bool} $recursive [false] - enable if target list has nested values
+///
+/// @return {list} - reversed list
 @function list-reverse($list, $recursive: false) {
     $result: ();
 

@@ -7,6 +7,8 @@
 /// @param {map} $map - the map which contains the key you wish to set
 /// @param {string} $key - the key you wish to set
 /// @param {*} $value - the value you wish to set for the key
+///
+/// @return {map} - updated map
 @function map-set($map, $key, $value) {
     @return map-merge($map, ($key: $value));
 }

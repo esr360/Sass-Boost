@@ -7,6 +7,8 @@
 /// @param {map} $map - the map which contains the key you wish to set
 /// @param {string|list} $keys - the keychain trail to your desired key
 /// @param {*} $value - the value you wish to set for the key
+///
+/// @return {map} - updated map
 @function map-set-deep($map, $keys, $value) {
 
     $private-sassy-maps-suppress-warnings: true !global;
@@ -45,5 +47,4 @@
     $private-sassy-maps-suppress-warnings: false !global;
 
     @return $map;
-
 }

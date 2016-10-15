@@ -4,11 +4,11 @@
 /// @access public
 /// @link https://css-tricks.com/snippets/sass/str-replace-function/
 ///
-/// @param {String} $string - Initial string
-/// @param {String} $search - Substring to replace
-/// @param {String} $replace - New value
+/// @param {string} $string - initial string
+/// @param {string} $search - substring to replace
+/// @param {string} $replace - new value
 ///
-/// @return {String} - Updated string
+/// @return {string} - updated string
 @function str-replace($string, $search, $replace: '') {
     $index: str-index($string, $search);
 

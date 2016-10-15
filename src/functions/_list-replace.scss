@@ -8,6 +8,8 @@
 /// @param {*} $old-value - where custom config will be passed
 /// @param {*} $new-value - where custom config will be passed
 /// @param {bool} $recursive [false] - where custom config will be passed
+///
+/// @return {list} - updated list
 @function list-replace($list, $old-value, $new-value, $recursive: false) {
     $result: ();
 
