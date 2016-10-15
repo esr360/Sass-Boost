@@ -2,6 +2,7 @@ language: node_js
 node_js:
   - "4.4"
 before_install:
+    - gem source -a http://rubygems.org/
     - gem install sass
     - gem install sscs-lint
     - npm install -g grunt-cli 
