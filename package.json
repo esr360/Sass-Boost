@@ -8,8 +8,8 @@
     "functions",
     "library"
   ],
+  "author": "Edmund Reed (http://twitter.com/esr360)",
   "homepage": "https://github.com/esr360/Sass-Boost",
-  "author": "Edmund Reed | @esr360",
   "bugs": {
     "url": "https://github.com/esr360/Sass-Boost/issues"
   },

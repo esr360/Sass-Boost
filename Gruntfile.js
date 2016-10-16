@@ -17,7 +17,7 @@ module.exports = function(grunt) {
         scsslint: {
             allFiles: [
                 'src/**/*.scss',
-                'unit-testing/functions/**/*.scss'
+                'unit-testing/**/*.scss'
             ],
             options: {
                 config: '.scss-lint.yml',
@@ -40,7 +40,7 @@ module.exports = function(grunt) {
          */
         sassdoc: {
             default: {
-                src: ['src/functions/**/*.scss'],
+                src: ['src/**/*.scss'],
                 options: {
                     dest: 'docs'
                 }

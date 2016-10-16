@@ -8,18 +8,14 @@
     "functions",
     "library"
   ],
-  "homepage": "https://github.com/esr360/Sass-Boost",
-  "dependencies": {},
   "authors": [
-    "Edmund Reed | @esr360"
+    "Edmund Reed (http://twitter.com/esr360)"
   ],
-  "main": "src/",
+  "homepage": "https://github.com/esr360/Sass-Boost",
+  "main": "src/_sass-boost.scss",
   "license": "MIT",
   "ignore": [
     "**/.*",
-    "node_modules",
-    "bower_components",
-    "test",
-    "tests"
+    "node_modules"
   ]
 }
