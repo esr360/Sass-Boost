@@ -11,7 +11,7 @@
 
 ### Requirements
 
-* Sass 3.4+
+* Sass 3.3+
 
 ### Installation
 

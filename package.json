@@ -1,6 +1,6 @@
 {
   "name": "Sass-Boost",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A library of commonly used custom Sass functions.",
   "keywords": [
     "sass",
@@ -16,7 +16,6 @@
   "license": "MIT",
   "devDependencies": {
     "grunt": "^0.4.5",
-    "grunt-contrib-sass": "^0.9.2",
     "grunt-contrib-watch": "^0.6.1",
     "grunt-mocha-cli": "^2.1.0",
     "grunt-notify": "^0.4.1",

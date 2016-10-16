@@ -73,8 +73,8 @@ module.exports = function(grunt) {
         notify: {
             css: {
                 options: {
-                    title: 'Styles Compiled',
-                    message: 'All styles have been successfully compiled!'
+                    title: 'Success',
+                    message: 'There were no errors running the compile tasks'
                 }
             }
         }
@@ -85,7 +85,6 @@ module.exports = function(grunt) {
      * Load NPM Tasks
      *************************************************************/
     
-    grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-mocha-cli');
     grunt.loadNpmTasks('grunt-notify');
@@ -104,23 +103,8 @@ module.exports = function(grunt) {
       
     // Compile the app
     grunt.registerTask('compile', [
-        'lint',
-        'test',
-        'docs'
-    ]);
-        
-    // Lint
-    grunt.registerTask('lint', [
-        'scsslint'
-    ]);
-        
-    // Test
-    grunt.registerTask('test', [
-        'mochacli'
-    ]);
-
-    // Docs
-    grunt.registerTask('docs', [
+        'scsslint',
+        'mochacli',
         'sassdoc'
     ]);
 
