@@ -56,15 +56,15 @@ You now have access to the following functions:
 * [`map-set-deep()`](https://esr360.github.io/Sass-Boost/#undefined-function-map-set-deep)
 * [`string-replace()`](https://esr360.github.io/Sass-Boost/#undefined-function-str-replace)
 
-### Linting/Unit Testing
+### Development
 
 > The Sass unit test framework is [Sass True](https://github.com/oddbird/true)
 
-#### Requirements
+#### Further Requirements
 
 * Node.js (+ npm)
-* Grunt
-* Scss Lint
+* Grunt (`npm install -g grunt-cli`)
+* Scss Lint (`gem install scss-lint`)
 
 Install Node modules:
 
