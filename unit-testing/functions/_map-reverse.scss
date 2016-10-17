@@ -8,12 +8,12 @@
                     'qux': 'alpha'
                 )
             ),
-            'color': red
+            'color': #ff0000
         );
 
         $actual: map-reverse($map);
         $expected:(
-            'color': red,
+            'color': #ff0000,
             'foo':(
                 'bar':(
                     'qux': 'alpha',

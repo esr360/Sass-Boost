@@ -7,7 +7,7 @@
                     'qux': 'alpha'
                 )
             ),
-            'color': red
+            'color': #ff0000
         );
 
         $map2:(
@@ -29,7 +29,7 @@
                 )
             ),
             'size': 'large',
-            'color': red
+            'color': #ff0000
         );
 
         @include assert-equal(
