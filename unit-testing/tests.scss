@@ -5,6 +5,7 @@
 @import '../src/sass-boost';
 
 // Import the test files
+@import 'functions/is-grayscale';
 @import 'functions/list-replace';
 @import 'functions/list-reverse';
 @import 'functions/map-get-deep';

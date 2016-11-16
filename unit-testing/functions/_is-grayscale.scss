@@ -1,0 +1,19 @@
+@include test-module('is-grayscale') {
+    @include test('Check if white is grayscale') {
+        $actual: is-grayscale(white);
+        $expected: true;
+
+        @include assert-equal(
+            $actual, $expected, 'should return true'
+        );
+    }
+    
+    @include test('Check if blue is grayscale') {
+        $actual: is-grayscale(blue);
+        $expected: false;
+
+        @include assert-equal(
+            $actual, $expected, 'should return false'
+        );
+    }
+}
