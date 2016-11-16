@@ -45,6 +45,7 @@ src/_sass-boost.scss
 
 You now have access to the following functions:
 
+* [`is-grayscale()`](https://esr360.github.io/Sass-Boost/#undefined-function-is-grayscale)
 * [`get-keys()`](https://esr360.github.io/Sass-Boost/#undefined-function-get-keys)
 * [`list-replace()`](https://esr360.github.io/Sass-Boost/#undefined-function-list-replace)
 * [`list-reverse()`](https://esr360.github.io/Sass-Boost/#undefined-function-list-reverse)

@@ -37,8 +37,7 @@ module.exports = function(grunt) {
          */
         scsslint: {
             allFiles: [
-                'src/**/*.scss',
-                'unit-testing/**/*.scss'
+                'src/**/*.scss'
             ],
             options: {
                 config: '.scss-lint.yml',
