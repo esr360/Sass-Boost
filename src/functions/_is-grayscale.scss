@@ -4,7 +4,7 @@
 /// @access public
 ///
 /// @param {color} $color - the color to test for grayscaleness
-/// @param {string} $string [''] - optional string to provide additional scoping
+/// @param {string} $string [''] - string to provide additional/alternative scoping
 /// @param {string} $namespace ['grey] - the namespace to search $string for
 ///
 /// @return {bool} - whether or not the passed color is grayscale
