@@ -9,9 +9,17 @@
 ///
 /// @return {bool} - whether or not the passed color is grayscale
 @function is-grayscale($color: '', $string: '', $namespace: 'grey') {
-    @if grayscale($color) == $color or str-index($string, $namespace) {
-        @return true;
+    @if type-of($color) == 'color' {
+        @if grayscale($color) == $color {
+            @return true;
+        } @else {
+            @return false;
+        }
     } @else {
-        @return false;
+        @if str-index($string, $namespace) {
+            @return true;
+        } @else {
+            @return false;
+        }
     }
 }

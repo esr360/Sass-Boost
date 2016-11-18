@@ -16,4 +16,27 @@
             $actual, $expected, 'should return false'
         );
     }
+
+    $colors:(
+        'blue': blue,
+        'greyscale-1': #232627 // this value technically isn't greyscale, but we want it to be considered so
+    );
+    
+    @include test('Check if value is greyscale based on retrieved key') {
+        $actual: is-grayscale($string: 'greyscale-1');
+        $expected: true;
+
+        @include assert-equal(
+            $actual, $expected, 'should return true'
+        );
+    }
+    
+    @include test('Check if value is greyscale based on retrieved key') {
+        $actual: is-grayscale($string: 'blue');
+        $expected: false;
+
+        @include assert-equal(
+            $actual, $expected, 'should return false'
+        );
+    }
 }
