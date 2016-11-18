@@ -4,8 +4,14 @@
 /// @access public
 ///
 /// @param {color} $color - the color to test for grayscaleness
+/// @param {string} $string [''] - optional string to provide additional scoping
+/// @param {string} $namespace ['grey] - the namespace to search $string for
 ///
 /// @return {bool} - whether or not the passed color is grayscale
-@function is-grayscale($color) {
-    @return if(grayscale($color) == $color, true, false);
+@function is-grayscale($color: '', $string: '', $namespace: 'grey') {
+    @if grayscale($color) == $color or str-index($string, $namespace) {
+        @return true;
+    } @else {
+        @return false;
+    }
 }
