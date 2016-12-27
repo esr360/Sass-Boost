@@ -32,13 +32,37 @@
         @return false;
     }
 }
+/// Remove a value from a list
+///
+/// @author Hugo Giraudel
+/// @access public
+/// @link https://goo.gl/LFRwQf
+///
+/// @param {list} $list - the list which contains the value you wish to remove
+/// @param {*} value - the value you wish to remove
+/// @param {bool} $recursive [false] - used if the target list is nested
+///
+/// @return {list} - updated list
+@function list-remove($list, $value, $recursive: false) {
+    $result: ();
+
+    @for $i from 1 through length($list) {
+        @if type-of(nth($list, $i)) == list and $recursive {
+            $result: append($result, list-remove(nth($list, $i), $value, $recursive));
+        } @else if nth($list, $i) != $value {
+            $result: append($result, nth($list, $i));
+        }
+    }
+
+    @return $result;
+}
 /// Replace a value in a list
 ///
 /// @author Hugo Giraudel
 /// @access public
 /// @link https://goo.gl/NCFTHF
 ///
-/// @param {map} $list - the list which contains the value you wish to replace
+/// @param {list} $list - the list which contains the value you wish to replace
 /// @param {*} $old-value - the value you wish to replace
 /// @param {*} $new-value - what you wish to replace the old value with
 /// @param {bool} $recursive [false] - used if the target list is nested
