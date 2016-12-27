@@ -19,9 +19,9 @@
     @each $item in $list {
         @if not index($result, $item) {
             @if length($item) &gt; 1 and $recursive {
-                $result: append($result, remove-duplicates($item, $recursive));
+                $result: append($result, remove-duplicates($item, $recursive), comma);
             } @else {
-                $result: append($result, $item);
+                $result: append($result, $item, comma);
             }
         }
     }
