@@ -1,3 +1,4 @@
 .vscode
 .settings
+debug.log
 node_modules

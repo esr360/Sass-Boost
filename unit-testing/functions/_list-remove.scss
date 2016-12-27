@@ -1,0 +1,13 @@
+@include test-module('list-remove') {
+    @include test('Remove item from list') {
+
+        $list: (1, 2, 3, 4);
+
+        $actual: list-remove($list, 3);
+        $expected: (1, 2, 4);
+
+        @include assert-equal(
+            $actual, $expected, 'should return list with item removed'
+        );
+    }
+}

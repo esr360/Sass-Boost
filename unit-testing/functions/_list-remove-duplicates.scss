@@ -1,0 +1,13 @@
+@include test-module('list-remove-duplicates') {
+    @include test('Remove duplicate items from list') {
+
+        $list: (1, 2, 2, 3, 4, 5, 5, 5, 6);
+
+        $actual: list-remove-duplicates($list);
+        $expected: (1, 2, 3, 4, 5, 6);
+
+        @include assert-equal(
+            $actual, $expected, 'should return list with duplicate items removed'
+        );
+    }
+}
