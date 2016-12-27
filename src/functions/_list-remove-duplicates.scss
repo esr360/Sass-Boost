@@ -1,0 +1,25 @@
+/// Remove a value from a list
+///
+/// @author Hugo Giraudel
+/// @access public
+/// @link https://goo.gl/ZWDbZo
+///
+/// @param {list} $list - the list which you want to remove duplicates from
+/// @param {bool} $recursive [false] - used if the target list is nested
+///
+/// @return {list} - updated list
+@function list-remove-duplicates($list, $recursive: false) {
+    $result: ();
+
+    @each $item in $list {
+        @if not index($result, $item) {
+            @if length($item) > 1 and $recursive {
+                $result: append($result, remove-duplicates($item, $recursive));
+            } @else {
+                $result: append($result, $item);
+            }
+        }
+    }
+
+    @return $result;
+}
