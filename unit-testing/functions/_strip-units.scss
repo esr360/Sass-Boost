@@ -1,0 +1,11 @@
+@include test-module('strip-units') {
+    @include test('Strip units from a value') {
+
+        $actual: strip-unit(40em);
+        $expected: 40;
+
+        @include assert-equal(
+            $actual, $expected, 'should return unitless value'
+        );
+    }
+}
