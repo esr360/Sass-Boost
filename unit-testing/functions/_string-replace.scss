@@ -3,7 +3,7 @@
 
         $string: 'Lorem ipsum dolor sit amet';
 
-        $actual: string-replace($string, 'ipsum', 'salmon');
+        $actual: str-replace($string, 'ipsum', 'salmon');
         $expected: 'Lorem salmon dolor sit amet';
 
         @include assert-equal(

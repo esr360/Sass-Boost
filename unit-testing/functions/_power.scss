@@ -1,0 +1,11 @@
+@include test-module('power') {
+    @include test('Multiply number by power of another') {
+
+        $actual: pow(8, 4);
+        $expected: 4096;
+
+        @include assert-equal(
+            $actual, $expected, 'should return correct new value'
+        );
+    }
+}

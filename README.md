@@ -78,3 +78,17 @@ To run unit tests, generate documentation and lint the source files, run the fol
 ```
 grunt compile
 ```
+
+## Changelog
+
+#### Version 1.1.0
+
+Released: 17th Jan 2017
+
+###### Release Notes
+
+* New function - `is-greyscale()`
+* New function - `list-replace()`
+* New function - `pow()`
+* New function - `strip-units()`
+* removing functions directory and adding [Sass-Boost](https://github.com/esr360/Sass-Boost) submodule

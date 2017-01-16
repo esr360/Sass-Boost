@@ -1,0 +1,12 @@
+/// Remove the units from a value
+///
+/// @author Hugo Giraudel
+/// @access public
+/// @link https://css-tricks.com/snippets/sass/strip-unit-function/
+///
+/// @param {number} $value - number to remove unit from
+///
+/// @return {number} - Unitless number
+@function strip-unit($value) {
+    @return $value / ($value * 0 + 1);
+}
