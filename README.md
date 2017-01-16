@@ -93,5 +93,5 @@ Released: 17th Jan 2017
 * New function - `list-remove()`
 * New function - `list-remove-duplicates()`
 * New function - `list-replace()`
-* New function - `strip-units()`
+* New function - `strip-unit()`
 * New function - `pow()`
