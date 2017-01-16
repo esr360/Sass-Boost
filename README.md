@@ -90,7 +90,8 @@ Released: 17th Jan 2017
 ###### Release Notes
 
 * New function - `is-greyscale()`
+* New function - `list-remove()`
+* New function - `list-remove-duplicates()`
 * New function - `list-replace()`
-* New function - `pow()`
 * New function - `strip-units()`
-* removing functions directory and adding [Sass-Boost](https://github.com/esr360/Sass-Boost) submodule
+* New function - `pow()`
