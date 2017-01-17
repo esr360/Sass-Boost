@@ -45,8 +45,8 @@ src/_sass-boost.scss
 
 You now have access to the following functions:
 
-* [`is-grayscale()`](https://esr360.github.io/Sass-Boost/#undefined-function-is-grayscale)
 * [`get-keys()`](https://esr360.github.io/Sass-Boost/#undefined-function-get-keys)
+* [`is-grayscale()`](https://esr360.github.io/Sass-Boost/#undefined-function-is-grayscale)
 * [`list-remove()`](https://esr360.github.io/Sass-Boost/#undefined-function-list-remove)
 * [`list-remove-duplicates()`](https://esr360.github.io/Sass-Boost/#undefined-function-list-remove-duplicates)
 * [`list-replace()`](https://esr360.github.io/Sass-Boost/#undefined-function-list-replace)
@@ -57,7 +57,9 @@ You now have access to the following functions:
 * [`map-search()`](https://esr360.github.io/Sass-Boost/#undefined-function-map-search)
 * [`map-set()`](https://esr360.github.io/Sass-Boost/#undefined-function-map-set)
 * [`map-set-deep()`](https://esr360.github.io/Sass-Boost/#undefined-function-map-set-deep)
+* [`power()`](https://esr360.github.io/Sass-Boost/#undefined-function-power)
 * [`string-replace()`](https://esr360.github.io/Sass-Boost/#undefined-function-str-replace)
+* [`strip-units()`](https://esr360.github.io/Sass-Boost/#undefined-function-strip-unit)
 
 ### Development
 
