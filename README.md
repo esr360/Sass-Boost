@@ -23,7 +23,7 @@
 bower install Sass-Boost
 ```
 
-```
+```css
 @import '../bower_components/Sass-Boost/src/sass-boost';
 ```
 
@@ -33,7 +33,7 @@ bower install Sass-Boost
 npm install Sass-Boost --save
 ```
 
-```
+```css
 @import '../node_modules/Sass-Boost/src/sass-boost';
 ```
 
@@ -43,7 +43,7 @@ npm install Sass-Boost --save
 git submodule add https://github.com/esr360/Sass-Boost.git vendor
 ```
 
-```
+```css
 @import 'vendor/Sass-Boost/src/sass-boost';
 ```
 
