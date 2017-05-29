@@ -15,7 +15,7 @@ module.exports = function(grunt) {
          * @see https://github.com/gruntjs/grunt-contrib-clean
          */
         clean: {
-            dist: {
+            default: {
                 src: 'dist'
             }
         },
@@ -25,7 +25,7 @@ module.exports = function(grunt) {
          * @see https://github.com/gruntjs/grunt-contrib-concat
          */   
         concat: {
-            scss: {
+            default: {
                 src: ['src/functions/*.scss'],
                 dest: 'dist/_sass-boost.scss',
             }
@@ -36,13 +36,13 @@ module.exports = function(grunt) {
          * @see https://github.com/ahmednuaman/grunt-scss-lint
          */
         scsslint: {
-            allFiles: [
-                'src/**/*.scss'
-            ],
             options: {
                 config: '.scss-lint.yml',
                 colorizeOutput: false
             },
+            default: [
+                'src/**/*.scss'
+            ]
         },
 
         /**
@@ -51,7 +51,7 @@ module.exports = function(grunt) {
          * @see https://github.com/Rowno/grunt-mocha-cli
          */
         mochacli: {
-            scss: ['unit-testing/tests.js']
+            default: ['unit-testing/tests.js']
         },
 
         /**
@@ -75,7 +75,7 @@ module.exports = function(grunt) {
             options: {
                 spawn: false,
             },
-            scss: {
+            src: {
                 files: ['src/**/*.scss'],
                 tasks: [ 
                     'scsslint',
@@ -91,7 +91,7 @@ module.exports = function(grunt) {
          * @see https://github.com/dylang/grunt-notify
          */
         notify: {
-            css: {
+            dist: {
                 options: {
                     title: 'Success',
                     message: 'There were no errors running the compile tasks'

@@ -24,7 +24,7 @@ bower install Sass-Boost
 #### Via NPM
 
 ```
-npm install Sass-Boost
+npm install Sass-Boost --save
 ```
 
 #### As Git-Submodule
@@ -77,7 +77,7 @@ Install Node modules:
 npm install
 ```
 
-To run unit tests, generate documentation and lint the source files, run the following command:
+To lint the source files, run unit tests, generate documentation and distribution file, run the following command:
 
 ```
 grunt compile
@@ -87,7 +87,7 @@ grunt compile
 
 #### Version 1.1.0
 
-Released: 17th Jan 2017
+Released: 29th May 2016
 
 ###### Release Notes
 

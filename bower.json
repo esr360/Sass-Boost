@@ -9,7 +9,7 @@
     "library"
   ],
   "authors": [
-    "Edmund Reed (http://twitter.com/esr360)"
+    "(Edmund Reed)[http://twitter.com/esr360] <esr360@live.com>"
   ],
   "homepage": "https://github.com/esr360/Sass-Boost",
   "main": "src/_sass-boost.scss",
