@@ -15,10 +15,16 @@
 
 ### Installation
 
+> Ensure your paths are correct as they may differ from below
+
 #### Via Bower
 
 ```
 bower install Sass-Boost
+```
+
+```
+@import '../bower_components/Sass-Boost/src/sass-boost';
 ```
 
 #### Via NPM
@@ -27,21 +33,21 @@ bower install Sass-Boost
 npm install Sass-Boost --save
 ```
 
+```
+@import '../node_modules/Sass-Boost/src/sass-boost';
+```
+
 #### As Git-Submodule
 
-> Ensure you change the PATH/TO/SUBMODULES part to your desired location
+```
+git submodule add https://github.com/esr360/Sass-Boost.git vendor
+```
 
 ```
-git submodule add https://github.com/esr360/Sass-Boost.git PATH/TO/SUBMODULES
+@import 'vendor/Sass-Boost/src/sass-boost';
 ```
 
 ---
-
-After you have installed Sass-Boost, import the following file into your project's main .scss file:
-
-```
-src/_sass-boost.scss
-```
 
 You now have access to the following functions:
 
