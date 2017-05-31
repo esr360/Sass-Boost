@@ -27,7 +27,7 @@ module.exports = function(grunt) {
         concat: {
             default: {
                 src: ['src/functions/*.scss'],
-                dest: 'dist/_sass-boost.scss',
+                dest: 'dist/_sass-boost.scss'
             }
         },
 
@@ -64,7 +64,7 @@ module.exports = function(grunt) {
                 options: {
                     dest: 'docs'
                 }
-            },
+            }
         },
 
         /**
@@ -75,15 +75,15 @@ module.exports = function(grunt) {
             options: {
                 spawn: false,
             },
-            src: {
+            default: {
                 files: ['src/**/*.scss'],
                 tasks: [ 
                     'scsslint',
                     'mochacli:scss',
                     'sassdoc',
                     'notify:css'
-                ],
-            },
+                ]
+            }
         },
 
         /**
@@ -91,7 +91,7 @@ module.exports = function(grunt) {
          * @see https://github.com/dylang/grunt-notify
          */
         notify: {
-            dist: {
+            default: {
                 options: {
                     title: 'Success',
                     message: 'There were no errors running the compile tasks'

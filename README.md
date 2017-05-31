@@ -17,16 +17,6 @@
 
 > Ensure your paths are correct as they may differ from below
 
-#### Via Bower
-
-```
-bower install Sass-Boost
-```
-
-```css
-@import '../bower_components/Sass-Boost/src/sass-boost';
-```
-
 #### Via NPM
 
 ```
@@ -37,6 +27,16 @@ npm install Sass-Boost --save
 @import '../node_modules/Sass-Boost/src/sass-boost';
 ```
 
+#### Via Bower
+
+```
+bower install Sass-Boost --save
+```
+
+```css
+@import '../bower_components/Sass-Boost/src/sass-boost';
+```
+
 #### As Git-Submodule
 
 ```
@@ -44,7 +44,15 @@ git submodule add https://github.com/esr360/Sass-Boost.git vendor
 ```
 
 ```css
-@import 'vendor/Sass-Boost/src/sass-boost';
+@import '../vendor/Sass-Boost/src/sass-boost';
+```
+
+#### Download
+
+> [Download _sass-boost.scss](dist/_sass-boost.scss)
+
+```css
+@import 'PATH/TO/sass-boost';
 ```
 
 ---
