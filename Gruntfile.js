@@ -51,7 +51,7 @@ module.exports = function(grunt) {
          * @see https://github.com/Rowno/grunt-mocha-cli
          */
         mochacli: {
-            default: ['unit-testing/tests.js']
+            scss: ['unit-testing/tests.js']
         },
 
         /**

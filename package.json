@@ -14,6 +14,10 @@
     "url": "https://github.com/esr360/Sass-Boost/issues"
   },
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/esr360/Sass-Boost.git"
+  },
   "devDependencies": {
     "grunt": "^0.4.5",
     "grunt-contrib-clean": "^1.0.0",
