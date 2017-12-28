@@ -99,6 +99,14 @@ grunt compile
 
 ## Changelog
 
+#### Version 1.1.1
+
+Released: 29th December 2017
+
+###### Release Notes
+
+* Updating `map-merge-deep` function
+
 #### Version 1.1.0
 
 Released: 29th May 2016
