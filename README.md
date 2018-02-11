@@ -71,7 +71,7 @@ You now have access to the following functions:
 * [`map-search()`](https://esr360.github.io/Sass-Boost/#undefined-function-map-search)
 * [`map-set()`](https://esr360.github.io/Sass-Boost/#undefined-function-map-set)
 * [`map-set-deep()`](https://esr360.github.io/Sass-Boost/#undefined-function-map-set-deep)
-* [`power()`](https://esr360.github.io/Sass-Boost/#undefined-function-power)
+* [`pow()`](https://esr360.github.io/Sass-Boost/#undefined-function-pow)
 * [`string-replace()`](https://esr360.github.io/Sass-Boost/#undefined-function-str-replace)
 * [`strip-units()`](https://esr360.github.io/Sass-Boost/#undefined-function-strip-unit)
 
